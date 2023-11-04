@@ -83,3 +83,51 @@ p{
   font-size: 25px;
   border: 5px solid #ffffff;
 }
+
+.vl {
+  border-left: 3px solid rgb(255, 0, 0);
+  height: 200px;
+  position: absolute;
+  left: 75%;
+  margin-left: -3px;
+  top: 470px;
+  rotate: 90deg;
+}
+
+.vl1 {
+  border-left: 3px solid rgb(255, 0, 0);
+  height: 200px;
+  position: absolute;
+  left: 25%;
+  margin-left: -3px;
+  top: 470px;
+  rotate: 90deg;
+}
+
+div.scroll-container {
+  background-color: #333;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 10px;
+  height: 620px;
+}
+
+div.scroll-container img {
+  padding: 3px;
+  height: 600px ;
+  width: 500px;
+}
+
+.rectangle1 {
+  position:absolute;
+  left: 38%;
+  width: 400px;
+  height: 80px;
+  background-color: #ff0000;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 25px;
+  border: 5px solid #ffffff;
+}
