@@ -190,15 +190,16 @@ div.scroll-container img {
 }
 
 .rectangle3 {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 880px;
   width: 140px;
-  height: 61px;
+  height: 50px;
   background-color: #000000;
   color: #fff;
   text-align: center;
-  line-height: 80px;
+  line-height: 50px;
   font-size: 15px;
   border: 5px solid #ffffff;
 }
+
