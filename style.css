@@ -203,3 +203,72 @@ div.scroll-container img {
   border: 5px solid #ffffff;
 }
 
+.riquadro{
+  width: 100%;
+  height: 1200px;
+  opacity: 40%;
+  
+
+}
+
+.fcf-form-class{
+  position: absolute;
+  top: 3182px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fcf-label{
+  font-size: 20px;
+  color: #fff;
+  padding-left: 35px;
+  margin-top: 50px;
+}
+
+#Riassunto {
+  width: 720px;
+  height: 200px;
+  opacity: 70%;
+  margin-top: 50px;
+}
+#Altro {
+  width: 720px;
+  height: 130px;
+  opacity: 70%;
+  margin-top: 50px;
+}
+
+#Email {
+  width: 300px;
+  height: 40px;
+  float: left;
+  opacity: 70%;
+  padding-left: 30px;
+  margin-top: 50px;
+}
+
+#ProfiloInstagram{
+float: right;
+width: 300px;
+height: 40px;
+opacity: 70%;
+margin-top: 50px;
+}
+
+#Name {
+  width: 720px;
+  height: 40px;
+  opacity: 70%;
+}
+
+#fcf-button{
+  font-size:30px;
+  width: 720px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.fcf-form-group button:hover{
+  background-color: #ff0000;
+  color: rgb(255, 255, 255);
+}

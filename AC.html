@@ -6,6 +6,7 @@
 </head>
     <link rel="stylesheet" href="style.css".css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="script.js"
 
 <body>
   <div class="topnav">
@@ -74,6 +75,48 @@
     <a href="#Coaching">UNISCITI OGGI</a>
   </div>
 </div>
+
+<img class="riquadro" src="foto sfondo/D70DB0A8-B4DA-4C04-91A0-4B4D4600AECC.jpeg"
+
+
+<h1>CONTATTAMI</h1>
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" placeholder="Nome e Cognome:" required>
+            </div>
+        <div class="fcf-form-group">
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" placeholder="Indirizzo Email:" required>
+            </div>
+            <div class="fcf-form-group">
+              <div class="fcf-input-group">
+                  <input type="text" id="ProfiloInstagram" name="ProfiloInstagram" class="fcf-form-control" placeholder="Profilo Instagram:" required>
+              </div>
+        <div class="fcf-form-group">
+            <div class="fcf-input-group">
+                <textarea id="Riassunto" name="Riassunto" class="fcf-form-control" placeholder="Breve riassunto dei tuoi obiettivi:" rows="6" maxlength="5000" required></textarea>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+          <div class="fcf-input-group">
+              <textarea id="Altro" name="Altro" class="fcf-form-control" placeholder="Altre informazioni che vuoi farmi sapere:" rows="6" maxlength="5000" required></textarea>
+          </div>
+      </div>
+        <label for="servizio" class="fcf-label">Quale servizio stai cercando?</label>
+    <select id="QSSC" name="QSSC">
+      <option value="Off">Off Season</option>
+      <option value="Prep">Preparazione</option>
+      <option value="Non">Non per competere</option>
+    </select>
+    <label for="gare" class="fcf-label">Hai mai gareggiato?</label>
+    <select id="HMG" name="HMG">
+      <option value="Si">Si</option>
+      <option value="No">No</option>
+    </select>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Invia Informazioni</button>
+        </div>
+
 
 
 </body>
