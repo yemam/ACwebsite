@@ -272,3 +272,12 @@ margin-top: 50px;
   background-color: #ff0000;
   color: rgb(255, 255, 255);
 }
+
+
+.hh1{
+  position: absolute;
+  top: 3182px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
