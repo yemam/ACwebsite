@@ -80,7 +80,7 @@
 
 
 <h1>CONTATTAMI</h1>
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+    <form id="fcf-form-id" class="fcf-form-class" onsubmit="sendEmail(); reset(); return false;">
             <div class="fcf-input-group">
                 <input type="text" id="Name" name="Name" class="fcf-form-control" placeholder="Nome e Cognome:" required>
             </div>
@@ -117,7 +117,28 @@
             <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Invia Informazioni</button>
         </div>
 
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
+<script>
 
-
+function sendEmail(){
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "youssefemam04@gmail.com",
+    Password : "3A839EF9C24F33FEDA753B74DDBA048327BA",
+    To : 'youssefemam04@gmail.com',
+    From : document.getElementById("Email").value,
+    Subject : "Nuova Domanda Di Contatto",
+    Body : "Nome: " + document.getElementById("Name").value
+        + "<br> Email: " + document.getElementById("Email.value")
+        + "<br> Profilo Instagram: " + document.getElementById("ProfiloInstagram.value")
+        + "<br> Breve riassunto degli obbiettivi: " + document.getElementById("Riassunto.value")
+        + "<br> Altre informazioni che voglio farti sapere: " + document.getElementById("Altro.value")
+        + "<br> Quale servizio stai cercando?: " + document.getElementById("QSSC.value")
+        + "<br> Hai mai gareggiato?: " + document.getElementById("HMG.value")
+}).then(
+  message => alert("Messaggio inviato con successo")
+);
+}
+</script>
 </body>
 </html>
