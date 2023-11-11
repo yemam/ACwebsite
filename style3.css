@@ -5,7 +5,7 @@ body{
 .allinea{
     color: white;
     position: absolute;
-    top: 50%;
+    top: 14%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 70px;
@@ -91,7 +91,7 @@ body{
 
   .triangle-up {
     position: absolute;
-    top: 77.45%;
+    top: 43.83%;
     left: 50%;
     transform: translate(-50%, -50%);
 	width: 0;
@@ -103,10 +103,180 @@ body{
 
 .rectangle2 {
     position: absolute;
-    top: 91%;
+    top: 51%;
     left: 50%;
     transform: translate(-50%, -50%);
   height: 200px;
   width: 100%;
   background-color: #000000;
 }  
+
+
+.soprascroll {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-size: 50px;
+}
+
+.vl2 {
+  border-left: 3px solid rgb(255, 0, 0);
+  height: 250px;
+  position: absolute;
+  rotate: 90deg;
+  left: 50%;
+  top: 1120px;
+}
+
+
+.gallery {
+  --s: 150px; /* control the size */
+  --g: 10px;  /* control the gap */
+  --f: 1.5;   /* control the scale factor */
+  
+  display: grid;
+  gap: var(--g);
+  width: calc(3*var(--s) + 2*var(--g));
+  aspect-ratio: 1;
+  scale: 200%;
+  grid-template-columns: repeat(3,auto);
+  margin-left: 35%;
+  margin-top: 20%;
+  margin-bottom: 200px;
+}
+
+.gallery > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(0%);
+  transition: .35s linear;
+}
+
+.gallery img:hover{
+  filter: grayscale(0);
+  width:  calc(var(--s)*var(--f));
+  height: calc(var(--s)*var(--f));
+}
+
+.triangle-up {
+	width: 0;
+	height: 0px;
+	border-left: 726px solid transparent;
+	border-right: 726px solid transparent;
+	border-bottom: 100px solid #ff0000;
+  top: 61.67%;
+}
+
+.rectangle2 {
+  height: 200px;
+  width: 100%;
+  background-color: #ff0000;
+  top: 65.46%;
+}  
+
+.allinea1{
+  color: white;
+  position: absolute;
+  top: 2482px;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+
+.pronto {
+  position: relative;
+  text-align: center;
+  top: 100px;
+  color: rgb(255, 255, 255);
+}
+
+.rectangle3 {
+  position: absolute;
+  top: 100px;
+  left: 880px;
+  width: 140px;
+  height: 50px;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 15px;
+  border: 5px solid #ffffff;
+}
+
+.riquadro{
+  width: 100%;
+  height: 1200px;
+  opacity: 40%;
+  margin-top: 400px;
+
+}
+
+.fcf-form-class{
+  position: absolute;
+  top: 3352px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fcf-label{
+  font-size: 20px;
+  color: #fff;
+  padding-left: 35px;
+  margin-top: 50px;
+}
+
+#Riassunto {
+  width: 720px;
+  height: 200px;
+  opacity: 70%;
+  margin-top: 50px;
+}
+#Altro {
+  width: 720px;
+  height: 130px;
+  opacity: 70%;
+  margin-top: 50px;
+}
+
+#Email {
+  width: 300px;
+  height: 40px;
+  float: left;
+  opacity: 70%;
+  padding-left: 30px;
+  margin-top: 50px;
+}
+
+#ProfiloInstagram{
+float: right;
+width: 300px;
+height: 40px;
+opacity: 70%;
+margin-top: 50px;
+}
+
+#Name {
+  width: 720px;
+  height: 40px;
+  opacity: 70%;
+}
+
+#fcf-button{
+  font-size:30px;
+  width: 720px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.fcf-form-group button:hover{
+  background-color: #ff0000;
+  color: rgb(255, 255, 255);
+}
+

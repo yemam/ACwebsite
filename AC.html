@@ -44,7 +44,7 @@
     <div class="allinea">TEAM CORBE</div> 
     
     <div class="rectangle">
-      <a href="#Coaching">COACHING</a>
+      <a href="Coaching.html">COACHING</a>
     </div>
   </div>
 <div class="vl"></div>
@@ -63,7 +63,7 @@
 
 <div class="contine">
 <div class="rectangle1">
-  <a href="#Transformations">VEDI DI PIÙ DEL TEAM CORBE</a>
+  <a href="Transformations.html">VEDI DI PIÙ DEL TEAM CORBE</a>
 </div>
 </div>
 <div class="triangle-up"></div>
@@ -133,12 +133,12 @@ function sendEmail(){
     From : document.getElementById("Email").value,
     Subject : "Nuova Domanda Di Contatto",
     Body : "Nome: " + document.getElementById("Name").value
-        + "<br> Email: " + document.getElementById("Email.value")
-        + "<br> Profilo Instagram: " + document.getElementById("ProfiloInstagram.value")
-        + "<br> Breve riassunto degli obbiettivi: " + document.getElementById("Riassunto.value")
-        + "<br> Altre informazioni che voglio farti sapere: " + document.getElementById("Altro.value")
-        + "<br> Quale servizio stai cercando?: " + document.getElementById("QSSC.value")
-        + "<br> Hai mai gareggiato?: " + document.getElementById("HMG.value")
+    + "<br> Email: " + document.getElementById("Email").value
+        + "<br> Profilo Instagram: " + document.getElementById("ProfiloInstagram").value
+        + "<br> Breve riassunto degli obbiettivi: " + document.getElementById("Riassunto").value
+        + "<br> Altre informazioni che voglio farti sapere: " + document.getElementById("Altro").value
+        + "<br> Quale servizio stai cercando?: " + document.getElementById("QSSC").value
+        + "<br> Hai mai gareggiato?: " + document.getElementById("HMG").value
 }).then(
   message => alert("Messaggio inviato con successo")
 );
