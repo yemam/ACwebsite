@@ -244,7 +244,7 @@ margin-top: 50px;
 
   .trianglenero {
     position: absolute;
-    top: 21.55%;
+    top: 21.87%;
     left: 50%;
     transform: translate(-50%, -50%);
 	  width: 0;
@@ -256,7 +256,7 @@ margin-top: 50px;
 
 .rectanglenero {
     position: absolute;
-    top: 25.34%;
+    top: 25.72%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 200px;
@@ -266,7 +266,7 @@ margin-top: 50px;
 
 .trianglerosso {
   position: absolute;
-  top: 61.67%;
+  top: 62.63%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 0;
@@ -278,10 +278,20 @@ margin-top: 50px;
 
 .rectanglerosso {
   position: absolute;
-  top: 65.46%;
+  top: 66.48%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 200px;
   width: 100%;
   background-color: #ff0000;
 }  
+
+.rectanglenero1{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 100%;
+  background-color: #ff0000;
+}

@@ -32,7 +32,9 @@
               </a>
             </p>
           </div>
-          <img class="logo" src="logo/logoACsilvertxt.png">
+          <a href="AC.html">
+            <img class="logo" src="logo/logoACsilvertxt.png">
+          </a>
           <hr color="red">
           <div class="teamcorbe">
             <img class="sfondo1" src="foto sfondo/srtrapsON.jpeg">
@@ -43,6 +45,88 @@
 
         <div class="triangle-up"></div>
         <div class="rectangle2"></div>
+
+        <img class="strapsON" src="foto sfondo/srtrapsON.jpeg">
+
+        <div class="soprascroll">ALESSANDRO CORBELLARI</div>
+        <div class="vl2"></div>
+
+        <div class="descr">
+          Mi chiamo Alessandro Corbellari e sono un bodybuilder natural con l'obiettivo di diventare un professionista in IFBB categoria Open Bodybuilding. Ho creato questo sito per poterti aiutare e schiarirti le idee per quanto riguarda il tuo percorso in palestra.
+
+          Offro servizi di coaching a frequentatori abituali di palestra e atleti che mostrano il massimo livello di impegno e un'etica di lavoro meticolosa, per migliorare e cambiare la loro vita.
+        </div>
+
+        <div class="coach">Cosa Include Il Mio Coaching</div>
+        <div class="vl3"></div>
+
+        <a href="Coaching.html"> 
+        <img class="pacchetto" src="logo/CoachingPackage.png">
+        </a>
+
+        <img class="specchio" src="foto sfondo/D70DB0A8-B4DA-4C04-91A0-4B4D4600AECC.jpeg">
+
+
+        <form id="fcf-form-id" class="fcf-form-class" onsubmit="sendEmail(); reset(); return false;">
+          <div class="fcf-input-group">
+              <input type="text" id="Name" name="Name" class="fcf-form-control" placeholder="Nome e Cognome:" required>
+          </div>
+      <div class="fcf-form-group">
+          <div class="fcf-input-group">
+              <input type="email" id="Email" name="Email" class="fcf-form-control" placeholder="Indirizzo Email:" required>
+          </div>
+          <div class="fcf-form-group">
+            <div class="fcf-input-group">
+                <input type="text" id="ProfiloInstagram" name="ProfiloInstagram" class="fcf-form-control" placeholder="Profilo Instagram:" required>
+            </div>
+      <div class="fcf-form-group">
+          <div class="fcf-input-group">
+              <textarea id="Riassunto" name="Riassunto" class="fcf-form-control" placeholder="Breve riassunto dei tuoi obiettivi:" rows="6" maxlength="5000" required></textarea>
+          </div>
+      </div>
+      <div class="fcf-form-group">
+        <div class="fcf-input-group">
+            <textarea id="Altro" name="Altro" class="fcf-form-control" placeholder="Altre informazioni che vuoi farmi sapere:" rows="6" maxlength="5000" required></textarea>
+        </div>
+    </div>
+      <label for="servizio" class="fcf-label">Quale servizio stai cercando?</label>
+  <select id="QSSC" name="QSSC">
+    <option value="Off">Off Season</option>
+    <option value="Prep">Preparazione</option>
+    <option value="Non">Non per competere</option>
+  </select>
+  <label for="gare" class="fcf-label">Hai mai gareggiato?</label>
+  <select id="HMG" name="HMG">
+    <option value="Si">Si</option>
+    <option value="No">No</option>
+  </select>
+      <div class="fcf-form-group">
+          <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Invia Informazioni</button>
+      </div>
+
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
+<script>
+
+function sendEmail(){
+Email.send({
+  Host : "smtp.elasticemail.com",
+  Username : "youssefemam04@gmail.com",
+  Password : "3A839EF9C24F33FEDA753B74DDBA048327BA",
+  To : 'youssefemam04@gmail.com',
+  From : document.getElementById("Email").value,
+  Subject : "Nuova Domanda Di Contatto",
+  Body : "Nome: " + document.getElementById("Name").value
+  + "<br> Email: " + document.getElementById("Email").value
+      + "<br> Profilo Instagram: " + document.getElementById("ProfiloInstagram").value
+      + "<br> Breve riassunto degli obbiettivi: " + document.getElementById("Riassunto").value
+      + "<br> Altre informazioni che voglio farti sapere: " + document.getElementById("Altro").value
+      + "<br> Quale servizio stai cercando?: " + document.getElementById("QSSC").value
+      + "<br> Hai mai gareggiato?: " + document.getElementById("HMG").value
+}).then(
+message => alert("Messaggio inviato con successo")
+);
+}
+</script>
 
     </body>
 </head>
