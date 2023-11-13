@@ -89,28 +89,6 @@ body{
     rotate: 90deg;
   }
 
-  .triangle-up {
-    position: absolute;
-    top: 43.83%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	width: 0;
-	height: 0px;
-	border-left: 726px solid transparent;
-	border-right: 726px solid transparent;
-	border-bottom: 100px solid #000000;
-}
-
-.rectangle2 {
-    position: absolute;
-    top: 51%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  height: 200px;
-  width: 100%;
-  background-color: #000000;
-}  
-
 
 .soprascroll {
   position: relative;
@@ -163,22 +141,6 @@ body{
   width:  calc(var(--s)*var(--f));
   height: calc(var(--s)*var(--f));
 }
-
-.triangle-up {
-	width: 0;
-	height: 0px;
-	border-left: 726px solid transparent;
-	border-right: 726px solid transparent;
-	border-bottom: 100px solid #ff0000;
-  top: 61.67%;
-}
-
-.rectangle2 {
-  height: 200px;
-  width: 100%;
-  background-color: #ff0000;
-  top: 65.46%;
-}  
 
 .allinea1{
   color: white;
@@ -280,3 +242,46 @@ margin-top: 50px;
   color: rgb(255, 255, 255);
 }
 
+  .trianglenero {
+    position: absolute;
+    top: 21.55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	  width: 0;
+	  height: 0px;
+	  border-left: 726px solid transparent;
+	  border-right: 726px solid transparent;
+	  border-bottom: 100px solid #000000;
+}
+
+.rectanglenero {
+    position: absolute;
+    top: 25.34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 100%;
+    background-color: #000000;
+}  
+
+.trianglerosso {
+  position: absolute;
+  top: 61.67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0px;
+  border-left: 726px solid transparent;
+  border-right: 726px solid transparent;
+  border-bottom: 100px solid #ff0000;
+}
+
+.rectanglerosso {
+  position: absolute;
+  top: 65.46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 100%;
+  background-color: #ff0000;
+}  
