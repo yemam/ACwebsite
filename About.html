@@ -109,10 +109,8 @@
 
 function sendEmail(){
 Email.send({
-  Host : "smtp.elasticemail.com",
-  Username : "youssefemam04@gmail.com",
-  Password : "3A839EF9C24F33FEDA753B74DDBA048327BA",
-  To : 'youssefemam04@gmail.com',
+  SecureToken: "2799e8ad-9b7b-4d1a-a909-27a644fb1592",
+  To : 'alessandro_corbellari@ac-coaching.it',
   From : document.getElementById("Email").value,
   Subject : "Nuova Domanda Di Contatto",
   Body : "Nome: " + document.getElementById("Name").value
